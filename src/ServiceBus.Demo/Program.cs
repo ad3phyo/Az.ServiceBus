@@ -7,8 +7,8 @@ public class Program
     public static async Task Main(string[] args)
     {
         // Replace these with your actual Azure Service Bus connection details
-        var connectionString = "Endpoint=sb://microsvcs.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qshKnfss2jrzc8co/E38flW0Mp0k3jTkO+ASbPDQxrg=";
-        // var connectionString = "Endpoint=sb://localhost;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true";
+        var connectionString = "";
+        // var connectionString = "";
         var queueName = "queue.1";
         var topicName = "topic.1";
         var subscriptionName = "subscription.1";
