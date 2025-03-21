@@ -1,4 +1,5 @@
 using ServiceBus.Demo.Services;
+using Microsoft.Extensions.Configuration;
 
 namespace ServiceBus.Demo;
 
@@ -6,7 +7,12 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        var connectionString = "connection-string";
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(AppContext.BaseDirectory)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .Build();
+
+        var connectionString = configuration.GetConnectionString("ServiceBusConnection");
         var queueName = "queue.1";
         var topicName = "topic.1";
         var subscriptionName = "subscription.1";
