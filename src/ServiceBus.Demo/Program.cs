@@ -6,9 +6,7 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        // Replace these with your actual Azure Service Bus connection details
-        var connectionString = "";
-        // var connectionString = "";
+        var connectionString = "connection-string";
         var queueName = "queue.1";
         var topicName = "topic.1";
         var subscriptionName = "subscription.1";
