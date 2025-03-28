@@ -12,13 +12,15 @@
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.21.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.1.0" />
-    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.15.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.22.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.17.1" />
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ServiceBus.Core\ServiceBus.Core.csproj" />
     <ProjectReference Include="..\ServiceBus.Models\ServiceBus.Models.csproj" />
+    
   </ItemGroup>
 
   <ItemGroup>
